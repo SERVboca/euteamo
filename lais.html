@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Laís</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(-45deg, #f185b3, #cc1b54, #f185b3);
+      background-size: 600% 600%;
+      animation: gradientAnimation 15s ease infinite;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 20px;
+  animation: fadeInText 3s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInText {
+  to {
+    opacity: 1;
+  }
+}
+
+.flower {
+  position: absolute;
+  font-size: 24px;
+  animation: floatUp 6s ease-in infinite;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh);
+    opacity: 0;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>Tá, eu sei que você não tá surpresa… mas eu escrevi isso só pra dar aquele charme mesmo. 😼</p>
+    <p>Agora senta que lá vem coração: eu preciso te contar tudo o que eu sinto. Vamos do começo, sem pressa.</p>
+    <p>Quando te conheci, tudo foi muito do nada… e a gente já foi logo começando a namorar. Lembro da primeira vez que tentei ir até a sua casa. Fui com um amigo meu e, sério, rodamos horas! Entramos e saímos de uns becos meio duvidosos (risos nervosos). Eu sempre tive um pé atrás com relacionamentos, mas como você tinha 18 na época, pensei: "ela deve ser madura". Então resolvi ir.</p>
+    <p>Na primeira tentativa, errei o caminho. Na segunda, errei de novo. Mas não desisti. E nessa mesma noite… eu encontrei. E quando te vi com aquele vestido preto e branco… até hoje essa imagem tá viva aqui.</p>
+    <p>Choveu naquele dia, lembra? Pra mim, foi um dos melhores dias da minha vida. Nosso primeiro beijo encaixou como peça de quebra-cabeça. Senti minha alma encostar na sua. Meu corpo leve. Como se o mundo inteiro tivesse dado um “pause” e só sobrasse eu e você.</p>
+    <p>Naquele momento, encontrei um lado meu que eu nem sabia que existia. Esse “eu” voltou agora. É o mesmo que nasceu quando te beijei.</p>
+    <p>Voltei pra casa tão feliz naquele dia... Eu nunca fui de falar disso com minha mãe, mas com você foi diferente. Falei do seu cabelo, do seu olhar, da sua boca, do seu nariz, do seu jeito engraçado — do jeito que eu mais gosto.</p>
+    <p>Aí veio o segundo encontro… só nós dois. Lembro que ficamos num lugar de parede branca — parecia uma igreja. A gente passou a noite lá, conversando, rindo, vivendo.</p>
+    <p>Depois teve o terceiro. Você nem estava em casa, mas mesmo assim eu e meu amigo ficamos horas lá esperando. E aí o quarto… O último. Se eu soubesse que seria o “último”, teria te abraçado por horas, dias, vidas.</p>
+    <p>Aí veio o término.</p>
+    <p>Eu era imaturo. Tentei te encontrar em outras pessoas. Mas a verdade? Eu só namorava por internet, sem alma, sem abraço. Só uma, antes de você, mas ela nem importa.</p>
+    <p>Anos depois, a vida me levou de volta até você. Vi um story seu sobre Minecraft (olha só o destino usando blocos quadrados pra reconectar corações). Respondi. A conversa foi curta, mas me arrancou sorrisos sinceros… coisa rara.</p>
+    <p>Tentei outro namoro depois, com uma amiga. Ela te removeu dos seguidores. A verdade é que ela não gostava quando eu era intenso. Mas eu sou assim. E não vou mudar.</p>
+    <p>Agora percebo que sou ainda mais. Fiz algo novo. Incomum. Um site. Com um texto só pra você. Porque você não é comum.</p>
+    <p>Voltamos a nos falar. Melhor do que antes. Conversas profundas. De verdade. E foi numa dessas, às 2 da manhã do dia 9 de junho de 2025, que me declarei.</p>
+    <p>Achei que ia ser rejeitado. Mas, pra minha surpresa… Eu fiz o certo.</p>
+    <p>E agora, a gente pode tentar tudo de novo. Só que melhor. Mais maduros. Mais nós.</p>
+    <p>Eu te amo muito. Mas dizer “muito” parece pouco. Então vou além: Eu te amo como daqui até a ponta do universo. E como o universo está em expansão infinita… Então sim, meu amor por você é infinito.</p>
+    <p>Mas ainda parece pouco.</p>
+    <p>Então eu te digo, Laís</p>
+    <p style="font-size: 24px;">EU TE AMO COMO CRISTO NOS AMOU.</p>
+    <p>E não te quero só por desejo. Não te quero só até que a morte nos separe. Eu quero viver contigo no paraíso que Deus prometeu. Quero a eternidade ao teu lado.</p>
+    <p>Com todo o amor,<br>De: Alírio Neto<br>Para: Laís Salles</p>
+  </div>  <script>
+    const emojis = ["🌸", "🌺", "🌷", "🌹"];
+
+    function createFlower() {
+      const flower = document.createElement("div");
+      flower.classList.add("flower");
+      flower.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+      flower.style.left = Math.random() * 100 + "vw";
+      flower.style.top = '100vh';
+      flower.style.animationDuration = (4 + Math.random() * 4) + "s";
+      document.body.appendChild(flower);
+
+      setTimeout(() => {
+        flower.remove();
+      }, 8000);
+    }
+
+    setInterval(createFlower, 500);
+  </script></body>
+</html>
